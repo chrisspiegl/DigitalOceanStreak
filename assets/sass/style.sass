@@ -1,0 +1,146 @@
+@charset"utf-8"
+
+/*
+ *
+ * Stuff we use here:
+ * - http://jaredhardy.com/sassy-buttons/
+ * - http://compass-style.org/
+ *
+ */
+
+$pad: 20px
+$mediaPhone: 600px
+
+
+@import "compass/reset"
+@import "compass/css3"
+@import "compass/css3/transition"
+@import "compass/css3/images"
+@import "compass/css3/user-interface"
+@import "compass/typography/text"
+@import "compass/utilities/general/clearfix"
+@import "sassy-buttons"
+
+*
+  @include box-sizing(border-box)
+
+@import "grid"
+
+body
+  padding-top: 2rem
+  padding-bottom: 2rem
+
+#nocss
+  display: none
+
+
+#surface, footer
+  display: block
+  width: 600px
+  margin: auto
+  +phone(100%, none)
+
+#header
+  padding-bottom: 2rem
+  text-align: center
+  .headerLogo
+    font-size: 4rem
+    font-weight: bold
+
+    br
+      display: none
+    @media (max-width: $mediaPhone)
+      br
+        display: block
+    &, &:visited, &:focus, &:hover
+      color: black
+      text-decoration: none
+  p.description
+    padding: 2rem 0 0
+    font-size: 1.2rem
+    text-align: center
+    @media (max-width: $mediaPhone)
+      padding: 2rem 1rem 0
+
+h1.title
+  padding-top: 2rem
+  font-size: 2rem
+  text-align: center
+  border-top: 10px solid black
+
+.longest
+  padding-bottom: 2rem
+
+.longestStreak
+  text-align: center
+  font-size: 8rem
+  font-weight: bold
+  padding-top: 2rem
+  padding-bottom: 2rem
+
+.longestStreakStart
+  @extend .col-1-3
+  text-align: right
+  font-size: 2rem
+  @media (max-width: $mediaPhone)
+    font-size: 1.6rem
+    width: 47%
+
+.longestStreakBetween
+  @extend .col-1-3
+  text-align: center
+  font-size: 2rem
+  @media (max-width: $mediaPhone)
+    width: 6%
+
+.longestStreakEnd
+  @extend .col-1-3
+  text-align: left
+  font-size: 2rem
+  @media (max-width: $mediaPhone)
+    font-size: 1.6rem
+    width: 47%
+
+.current
+  padding-bottom: 2rem
+  .streak
+    font-size: 8rem
+    text-align: center
+  .start
+    font-size: 2rem
+    text-align: center
+
+.streaks
+  .single
+    @include clearfix
+    padding: 1rem 0
+    border-bottom: 1px solid black
+    .streak
+      text-align: center
+      font-size: 3rem
+      font-weight: bold
+      line-height: 4rem
+    .start
+      text-align: right
+      font-size: 1.5rem
+      line-height: 1rem
+      padding: 0 1rem
+    .end
+      text-align: left
+      font-size: 1.5rem
+      line-height: 1rem
+      padding: 0 1rem
+
+
+footer
+  text-align: center
+  .social
+    padding: 2rem 0
+    a
+      padding: 2rem
+
+
+
+
+a, a:hover, a:focus, a:visited
+  color: black

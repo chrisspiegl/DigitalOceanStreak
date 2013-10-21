@@ -1,0 +1,17 @@
+# System and Cache files
+.sass-cache
+.DS_Store
+
+# Developing with SublimeText? Ignore these.
+*.sublime-project
+*.sublime-workspace
+
+# Testing and NodeJS Standard
+/lib-cov/
+node_modules/
+.coverage_data
+coverage.html
+
+# Keep folder structures but no files in this folders.
+/public/**/*
+/tmp/**/*

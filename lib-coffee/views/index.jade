@@ -1,0 +1,36 @@
+include header
+
+  - dateFormat = function (date, format) {
+  -  format = format.replace("dd", (date.getDate() < 10 ? '0' : '') + date.getDate()); // Pad with '0' if needed
+  -  format = format.replace("MM", (date.getMonth() < 9 ? '0' : '') + (date.getMonth() + 1)); // Months are zero-based
+  -  format = format.replace("yyyy", date.getFullYear());
+  -  return format;
+  - }
+
+  block content
+    div.longest
+      h1.title Longest Streak
+      div.longestStreak #{longestStreak}
+      div.grid
+        div.longestStreakStart= dateFormat(new Date(longestStreakStart), 'yyyy-MM-dd')
+        div.longestStreakBetween -
+        div.longestStreakEnd= dateFormat(new Date(longestStreakEnd), 'yyyy-MM-dd')
+
+    div.current
+      h1.title Current Streak
+      div.streak #{currentStreak.streak}
+      div.start Since: &nbsp;
+        = dateFormat(new Date(currentStreak.start), 'yyyy-MM-dd')
+
+    div.grid
+      h1.title Streaks
+      div.streaks.col-1-1
+        each val in streaks
+          if val.streak > 0
+            div.single
+              div.streak.col-1-1.module= val.streak
+              div.start.col-1-2= dateFormat(val.start, 'yyyy-MM-dd')
+              div.end.col-1-2= dateFormat(val.end, 'yyyy-MM-dd')
+
+
+include footer

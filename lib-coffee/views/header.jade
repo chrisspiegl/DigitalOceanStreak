@@ -1,0 +1,51 @@
+!!!
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE-Edge,chrome=1")
+    meta(name="description", content="TODO")
+    meta(name="keywords", content="TODO")
+    meta(name="viewport", content="maximum-scale=1.0, width=device-width, initial-scale=1.0, user-scalable=0")
+    //- TODO meta(name="apple-itunes-app", content="app-id=461504587")
+    meta(name="robots", content="noarchive")
+    //- TODO meta(name="apple-mobile-web-app-capable", content="yes")
+
+    //- TODO link(rel="apple-touch-icon-precomposed", sizes="152x152", href="/images/apple-touch-icon-152x152-precomposed.png")
+    //- TODO link(rel="apple-touch-icon-precomposed", sizes="144x144", href="/images/apple-touch-icon-144x144-precomposed.png")
+    //- TODO link(rel="apple-touch-icon-precomposed", sizes="120x120", href="/images/apple-touch-icon-120x120-precomposed.png")
+    //- TODO link(rel="apple-touch-icon-precomposed", sizes="114x114", href="/images/apple-touch-icon-114x114-precomposed.png")
+    //- TODO link(rel="apple-touch-icon-precomposed", sizes="72x72", href="/images/apple-touch-icon-72x72-precomposed.png")
+    //- TODO link(rel="apple-touch-icon-precomposed", href="/images/apple-touch-icon-precomposed.png")
+    //- TODO link(type="application/opensearchdescription+xml", rel="search", href="/osd.xml")
+
+    title DigitalOceanStreak
+    link(rel="stylesheet", type="text/css", href="/css/style.css")
+
+    script var DOSVersion="#{locals.frontEndVersion}";
+
+body.page(class="page-#{page}")
+
+div#nocss
+  | Your browser was unable to load all of DigitalOceanStreak resources. They may have been blocked by your firewall, proxy or browser configuration.<br>Press Ctrl+F5 (Windows) or Ctrl+Shift+R (Windows) or CMD+R (Mac) to have your browser try again.
+  hr
+
+div#surface.grid
+  div#header
+    a.headerBtn.headerLogo(href='/')
+      span
+        | Digital
+        br
+        | Ocean
+        br
+        | Streak
+
+    p.description
+      a(href="https://www.digitalocean.com/?refcode=9822b155cd67") DigitalOcean
+      | * is an awesome hoster. This little site shows the longest interval they have been up without any problems (reported on their&nbsp;
+      a(href="http://www.digitaloceanstatus.com/") status site
+      | ).
+  div#content.container
+    block content
+
+
+

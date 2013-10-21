@@ -1,0 +1,58 @@
+{
+  "private": true,
+  "name": "DigitalOceanStreak",
+  "version": "0.0.0",
+  "description": "DigitalOceanStreak",
+  "keywords": [
+    "DigitalOceanStreak",
+    "DigitalOcean",
+    "Streak"
+  ],
+  "license": "TODO",
+  "author": "TODO",
+  "contributors": [
+    {
+      "name": "Christoph Spiegl",
+      "email": "chris@CHRISSP.com"
+    }
+  ],
+  "dependencies": {
+    "nodstr-framework": "*",
+    "express": "3.3.x",
+    "jade": "0.34.x",
+    "consolidate": "0.9.x",
+    "lodash": "2.0.x",
+    "when": "*",
+    "winston": "0.7.x",
+    "node.io": "*",
+    "debug":"*"
+  },
+  "devDependencies": {
+    "coffee-script": "1.6.x",
+    "source-map-support": "0.2.x",
+    "mocha": "1.12.x",
+    "chai": "1.7.x",
+    "grunt": "0.4.x",
+    "grunt-nodemon": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-concurrent": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-mocha-test": "*",
+    "grunt-contrib-compass": "*",
+    "browserify": "*",
+    "grunt-coffeeify": "*",
+    "grunt-jade":"*",
+    "matchdep": "*"
+  },
+  "repository": "",
+  "main": "index.js",
+  "bin": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "grunt test"
+  },
+  "engines": {
+    "node": ">=0.10.18"
+  }
+}
