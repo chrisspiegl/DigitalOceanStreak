@@ -1,6 +1,10 @@
 # DigitalOceanStreak
 
-DigitalOcean is an awesome hoster. This little script/site shows the longest interval they have been up without any problems (reported on their status site).
+[DigitalOcean](https://www.digitalocean.com/?refcode=9822b155cd67) is an awesome hoster. This little script/site shows the longest interval they have been up without any problems (reported on their [status site](http://www.digitaloceanstatus.com/)).
+
+# Caution (Beta / Experimental)
+
+This software is experimental and at best a little script to play with. It is not recommended to base anything on this.
 
 # Installation
 
@@ -13,7 +17,7 @@ The server will start on the specified port (in lib-coffee/config/server.coffee)
 
 # Links
 
-* Website: [http://chrissp.com](http://chrissp.com)
+* Website: [chrissp.com](http://chrissp.com)
 * Twitter: [twitter.com/CHRISSPdotCOM](https://twitter.com/CHRISSPdotCOM)
 * Facebook: [facebook.com/CHRISSPdotCOM](https://facebook.com/CHRISSPdotCOM)
 * Github: [github.com/cspiegl/DigitalOceanStreak](https://github.com/cspiegl/DigitalOceanStreak)
