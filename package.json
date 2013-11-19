@@ -17,7 +17,6 @@
     }
   ],
   "dependencies": {
-    "nodstr-framework": "*",
     "express": "3.3.x",
     "jade": "0.34.x",
     "consolidate": "0.9.x",
