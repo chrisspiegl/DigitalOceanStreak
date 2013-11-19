@@ -1,0 +1,11 @@
+[
+  {
+    "name": "dos",
+    "script": "./index.js",
+    "args": [],
+    "exec_mode": "fork_mode",
+    "error_file": "./tmp/pm2-error.log",
+    "out_file": "./tmp/pm2-out.log",
+    "DOS_DEV": true
+  }
+]
