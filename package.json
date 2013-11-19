@@ -28,6 +28,8 @@
   },
   "devDependencies": {
     "coffee-script": "1.6.x",
+    "coffee-backtrace": "*",
+    "coffee-cache": "*",
     "source-map-support": "0.2.x",
     "mocha": "1.12.x",
     "chai": "1.7.x",
